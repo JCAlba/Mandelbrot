@@ -13,6 +13,8 @@
 
 #pragma pack(2)
 
+namespace jca {
+
 struct BitmapInfoHeader {
   int32_t headerSize{40};
   int32_t width;
@@ -26,5 +28,6 @@ struct BitmapInfoHeader {
   int32_t colors{0};
   int32_t importantColors{0};
 };
-
+  
+}
 #endif /* BitmapInfoHeader_hpp */
