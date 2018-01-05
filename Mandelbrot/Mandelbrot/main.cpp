@@ -7,11 +7,14 @@
 //
 
 #include <iostream>
-#include "BitmapFileHeader.hpp"
-#include "BitmapInfoHeader.hpp"
+#include "Bitmap.hpp"
+
+using namespace jca;
 
 int main(int argc, const char * argv[]) {
-  // insert code here...
-  std::cout << "Hello, World!\n";
+  Bitmap bitmap(800,600);
+  
+  bitmap.write("test.bmp");
+  std::cout << "Finished\n";
   return 0;
 }

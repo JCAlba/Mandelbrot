@@ -5,7 +5,7 @@
 //  Created by Juan Carlos Albahaca on 2018-01-05.
 //  Copyright © 2018 Juan Carlos Albahaca. All rights reserved.
 //
-
+#include <fstream>
 #include "Bitmap.hpp"
 #include "BitmapFileHeader.hpp"
 #include "BitmapInfoHeader.hpp"
@@ -26,7 +26,24 @@ namespace jca {
     
     infoHeader.width = m_width;
     infoHeader.height = m_height;
-    return false;
+    
+    std::ofstream file;
+    
+    file.open(filename, std::ios::out|std::ios::binary);
+    
+    if(!file)
+      return false;
+    
+    file.write((char*)&fileHeader, sizeof(fileHeader));
+    file.write((char*)&infoHeader, sizeof(infoHeader));
+    file.write((char*)m_pPixels.get(), m_width*m_height*3);
+    
+    file.close();
+    
+    if(!file)
+      return false;
+    
+    return true;
   }
   
   void Bitmap::setPixel(int x, int y, uint8_t red, uint8_t green, uint8_t blue) {
