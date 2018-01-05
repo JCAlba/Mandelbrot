@@ -7,6 +7,8 @@
 //
 
 #include <iostream>
+#include "BitmapFileHeader.hpp"
+#include "BitmapInfoHeader.hpp"
 
 int main(int argc, const char * argv[]) {
   // insert code here...

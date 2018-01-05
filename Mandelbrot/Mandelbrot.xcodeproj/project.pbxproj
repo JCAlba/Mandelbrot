@@ -25,6 +25,8 @@
 /* Begin PBXFileReference section */
 		2BB6B4752000214200859F85 /* Mandelbrot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mandelbrot; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB6B4782000214200859F85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		2BB6B480200021A700859F85 /* BitmapFileHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BitmapFileHeader.hpp; sourceTree = "<group>"; };
+		2BB6B4832000239F00859F85 /* BitmapInfoHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BitmapInfoHeader.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +59,8 @@
 		2BB6B4772000214200859F85 /* Mandelbrot */ = {
 			isa = PBXGroup;
 			children = (
+				2BB6B480200021A700859F85 /* BitmapFileHeader.hpp */,
+				2BB6B4832000239F00859F85 /* BitmapInfoHeader.hpp */,
 				2BB6B4782000214200859F85 /* main.cpp */,
 			);
 			path = Mandelbrot;
