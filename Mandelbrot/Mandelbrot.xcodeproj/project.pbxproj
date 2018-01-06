@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B386BD3200027000040C578 /* Bitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B386BD1200027000040C578 /* Bitmap.cpp */; };
+		2B386BD9200130370040C578 /* Mandelbrot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B386BD7200130370040C578 /* Mandelbrot.cpp */; };
 		2BB6B4792000214200859F85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6B4782000214200859F85 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,8 @@
 /* Begin PBXFileReference section */
 		2B386BD1200027000040C578 /* Bitmap.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Bitmap.cpp; sourceTree = "<group>"; };
 		2B386BD2200027000040C578 /* Bitmap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bitmap.hpp; sourceTree = "<group>"; };
+		2B386BD7200130370040C578 /* Mandelbrot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mandelbrot.cpp; sourceTree = "<group>"; };
+		2B386BD8200130370040C578 /* Mandelbrot.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mandelbrot.hpp; sourceTree = "<group>"; };
 		2BB6B4752000214200859F85 /* Mandelbrot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mandelbrot; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB6B4782000214200859F85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2BB6B480200021A700859F85 /* BitmapFileHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BitmapFileHeader.hpp; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				2BB6B4782000214200859F85 /* main.cpp */,
 				2B386BD1200027000040C578 /* Bitmap.cpp */,
 				2B386BD2200027000040C578 /* Bitmap.hpp */,
+				2B386BD7200130370040C578 /* Mandelbrot.cpp */,
+				2B386BD8200130370040C578 /* Mandelbrot.hpp */,
 			);
 			path = Mandelbrot;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B386BD9200130370040C578 /* Mandelbrot.cpp in Sources */,
 				2B386BD3200027000040C578 /* Bitmap.cpp in Sources */,
 				2BB6B4792000214200859F85 /* main.cpp in Sources */,
 			);
@@ -242,6 +248,7 @@
 		2BB6B47D2000214200859F85 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -250,6 +257,7 @@
 		2BB6B47E2000214200859F85 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
