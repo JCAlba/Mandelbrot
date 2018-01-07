@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		2B386BD3200027000040C578 /* Bitmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B386BD1200027000040C578 /* Bitmap.cpp */; };
 		2B386BD9200130370040C578 /* Mandelbrot.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B386BD7200130370040C578 /* Mandelbrot.cpp */; };
+		2B386BDC2001574A0040C578 /* Zoom.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B386BDA2001574A0040C578 /* Zoom.cpp */; };
+		2B386BDF200158DE0040C578 /* ZoomList.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B386BDD200158DE0040C578 /* ZoomList.cpp */; };
+		2B386BE220018C7C0040C578 /* FractalCreator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B386BE020018C7C0040C578 /* FractalCreator.cpp */; };
+		2B386BE52001981A0040C578 /* RGB.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2B386BE32001981A0040C578 /* RGB.cpp */; };
 		2BB6B4792000214200859F85 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2BB6B4782000214200859F85 /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +33,14 @@
 		2B386BD2200027000040C578 /* Bitmap.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Bitmap.hpp; sourceTree = "<group>"; };
 		2B386BD7200130370040C578 /* Mandelbrot.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mandelbrot.cpp; sourceTree = "<group>"; };
 		2B386BD8200130370040C578 /* Mandelbrot.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Mandelbrot.hpp; sourceTree = "<group>"; };
+		2B386BDA2001574A0040C578 /* Zoom.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Zoom.cpp; sourceTree = "<group>"; };
+		2B386BDB2001574A0040C578 /* Zoom.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Zoom.hpp; sourceTree = "<group>"; };
+		2B386BDD200158DE0040C578 /* ZoomList.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ZoomList.cpp; sourceTree = "<group>"; };
+		2B386BDE200158DE0040C578 /* ZoomList.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = ZoomList.hpp; sourceTree = "<group>"; };
+		2B386BE020018C7C0040C578 /* FractalCreator.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = FractalCreator.cpp; sourceTree = "<group>"; };
+		2B386BE120018C7C0040C578 /* FractalCreator.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = FractalCreator.hpp; sourceTree = "<group>"; };
+		2B386BE32001981A0040C578 /* RGB.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RGB.cpp; sourceTree = "<group>"; };
+		2B386BE42001981A0040C578 /* RGB.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RGB.hpp; sourceTree = "<group>"; };
 		2BB6B4752000214200859F85 /* Mandelbrot */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Mandelbrot; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BB6B4782000214200859F85 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		2BB6B480200021A700859F85 /* BitmapFileHeader.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BitmapFileHeader.hpp; sourceTree = "<group>"; };
@@ -67,11 +79,19 @@
 			children = (
 				2BB6B480200021A700859F85 /* BitmapFileHeader.hpp */,
 				2BB6B4832000239F00859F85 /* BitmapInfoHeader.hpp */,
+				2B386BE32001981A0040C578 /* RGB.cpp */,
+				2B386BE42001981A0040C578 /* RGB.hpp */,
 				2BB6B4782000214200859F85 /* main.cpp */,
 				2B386BD1200027000040C578 /* Bitmap.cpp */,
 				2B386BD2200027000040C578 /* Bitmap.hpp */,
 				2B386BD7200130370040C578 /* Mandelbrot.cpp */,
 				2B386BD8200130370040C578 /* Mandelbrot.hpp */,
+				2B386BDA2001574A0040C578 /* Zoom.cpp */,
+				2B386BDB2001574A0040C578 /* Zoom.hpp */,
+				2B386BDD200158DE0040C578 /* ZoomList.cpp */,
+				2B386BDE200158DE0040C578 /* ZoomList.hpp */,
+				2B386BE020018C7C0040C578 /* FractalCreator.cpp */,
+				2B386BE120018C7C0040C578 /* FractalCreator.hpp */,
 			);
 			path = Mandelbrot;
 			sourceTree = "<group>";
@@ -133,9 +153,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2B386BE220018C7C0040C578 /* FractalCreator.cpp in Sources */,
 				2B386BD9200130370040C578 /* Mandelbrot.cpp in Sources */,
+				2B386BDF200158DE0040C578 /* ZoomList.cpp in Sources */,
 				2B386BD3200027000040C578 /* Bitmap.cpp in Sources */,
+				2B386BDC2001574A0040C578 /* Zoom.cpp in Sources */,
 				2BB6B4792000214200859F85 /* main.cpp in Sources */,
+				2B386BE52001981A0040C578 /* RGB.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
